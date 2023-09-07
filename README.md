@@ -1,6 +1,6 @@
 Document Web Project
 
-Built using: SpringBoot,MySQL, JSP, Github
+Built using: SpringBoot, MySQL, JSP, Github
 
 Basic Spring Boot project to demonstrate uploading and downloading functionality from a web app.
 
