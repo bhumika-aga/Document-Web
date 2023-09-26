@@ -12,20 +12,19 @@
 <body>
 	<form action="upload" method="post" enctype="multipart/form-data">
 		<pre>
-		Id: <input type="text" name="id" /> <br> 
 		Document: <input type="file" name="document" /> <br> 
 		<input type="submit" name="submit" value="Upload"> <br>
 	</pre>
 	</form>
 
-	<table>
-		<tr>
+	<table style="border: 1px; border-color: black; padding: 10px;">
+		<tr style="border: 1px; border-color: black; padding: 10px;">
 			<th>ID</th>
 			<th>Name</th>
 			<th>Download Link</th>
 		</tr>
 		<c:forEach items="${documents}" var="document">
-			<tr>
+			<tr style="border: 1px; border-color: black; padding: 10px;">
 				<td>${document.id}</td>
 				<td>${document.name}</td>
 				<td><a href="download?id=${document.id}">Download</a></td>
