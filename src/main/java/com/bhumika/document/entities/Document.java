@@ -13,6 +13,7 @@ public class Document {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String name;
+
 	@Lob
 	private byte[] data;
 
