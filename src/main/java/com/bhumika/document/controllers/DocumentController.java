@@ -26,7 +26,6 @@ public class DocumentController {
 	@GetMapping("/displayUpload")
 	public String displayUpload(ModelMap modelMap) {
 		List<Document> documents = repository.findAll();
-		System.out.println(documents.size());
 		modelMap.addAttribute("documents", documents);
 		return "documentUpload";
 	}
